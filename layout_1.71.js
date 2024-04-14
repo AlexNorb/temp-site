@@ -205,6 +205,9 @@ async function createPDF(frontImages, backImages, frontFiles, backFiles) {
   } else if (pageSize === "Letter landscape") {
     pageWidth = 792; // Letter landscape width in points
     pageHeight = 612; // Letter landscape height in points
+  } else if (pageSize === "18x12 inch") {
+    pageWidth = 864;
+    pageHeight = 1296;
   }
 
   let x = (pageWidth - columns * imageWidth) / 2;
